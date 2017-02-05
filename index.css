@@ -127,6 +127,15 @@ a, a:hover, a:visited, a:focus {
     background: #000;
     line-height: 70px;
 }
+.info_fixed {
+    z-index: 99;
+    width: 100%;
+    display: none;
+    position: fixed;
+    top:0;
+    background: #000;
+    line-height: 70px;
+}
 .event-label {
     font-size: .9em;
     letter-spacing: .2em;
@@ -236,6 +245,18 @@ a, a:hover, a:visited, a:focus {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.portfolio a.video:before {
+    content: '';
+    position: absolute;
+    background: url(img/play.png) no-repeat center center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background-size: 20%;
+    opacity: 1;
+}
 .portfolio > div {
     position: relative;
 }
@@ -245,7 +266,7 @@ a, a:hover, a:visited, a:focus {
     transition: all .5s ease;
     cursor: pointer;
 }
-.portfolio img:hover {
+.portfolio a:hover img {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
@@ -304,6 +325,14 @@ a, a:hover, a:visited, a:focus {
     -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
+.portfolio-hidden {
+    opacity: 0 !important;
+}
+.portfolio-item {
+    transition: all .5s;
+    opacity: 1;
+}
+
 .btn-container {
     position: relative;
     z-index: 1;
