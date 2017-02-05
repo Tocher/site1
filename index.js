@@ -29,7 +29,7 @@ $('.share').click(function(e) {
 
     console.log(data);
 
-    shareTmp.html(VK.Share.button(data));
+    shareTmp.html(VK.Share.button(data, {text:'testtest'}));
 
     try {
         shareTmp.find('a')[2].click();
