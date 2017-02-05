@@ -14,7 +14,7 @@
 body {
     background: #000 !important;
     color: #fff;
-    font-size:10px;
+    font-size:12px;
     font-family: "Lato-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 @media (max-width: 575px) {
@@ -37,6 +37,9 @@ body {
     }
     .slide-right {
         margin-top: 20px;
+    }
+    .info_fixed {
+        display: none !important;
     }
 }
 /* Small devices (tablets, 768px and up) */
