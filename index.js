@@ -27,9 +27,7 @@ $('.share').click(function(e) {
     data.image = data.url;
     data.noparse = true;
 
-    console.log(data);
-
-    shareTmp.html(VK.Share.button(data, {text:'testtest'}));
+    shareTmp.html(VK.Share.button(data));
 
     try {
         shareTmp.find('a')[0].click();
