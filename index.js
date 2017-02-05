@@ -24,6 +24,7 @@ $('.share').click(function(e) {
     var data = $(this).data();
 
     data.url = location.href + data.url;
+    data.image = data.url;
     data.noparse = true;
 
     console.log(data);
