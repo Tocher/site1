@@ -17,6 +17,28 @@ body {
     font-size:10px;
     font-family: "Lato-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+@media (max-width: 575px) {
+    .slide-share {
+        margin: 20px 0;
+    }
+    .slide-top {
+        text-align: center;
+    }
+    .slide-top > .row {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .info {
+        padding-top: 20px;
+    }
+    .slide-bottom {
+        margin-top: 20px;
+    }
+    .slide-right {
+        margin-top: 20px;
+    }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 576px) {
     body {
@@ -24,6 +46,9 @@ body {
     }
     .info-logo {
         height: 80%;
+    }
+    .slide-top {
+        text-align: right;
     }
 }
 @media (min-width: 768px) {
@@ -128,7 +153,7 @@ a, a:hover, a:visited, a:focus {
 }
 .promo_bg {
     content: '';
-    position: fixed;
+    position: absolute;
     z-index: -1;
     top:0;
     bottom:0;
@@ -137,7 +162,12 @@ a, a:hover, a:visited, a:focus {
     background: url(img/section2.jpg) no-repeat center top;
     background-size: cover;
     transform: translateZ(0);
-    animation: zooming 20s infinite ease-in-out;
+}
+.section3 .img-fluid {
+    max-height: 70vh;
+}
+.carousel-inner {
+    padding-bottom: 10vh;
 }
 .section3 .carousel-control.left,
 .section3 .carousel-control.right {
@@ -161,14 +191,14 @@ a, a:hover, a:visited, a:focus {
     height: 80px;
     transform: rotate(180deg);
 }
-.share {
+.share, .share:hover {
+    text-decoration: none;
 }
 .share-text {
     display: inline-block;
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 0 10px;
-    height: 25px;
     margin: 3px 0;
 }
 
@@ -323,6 +353,9 @@ a.monotone {
 }
 .social-facebook {
     background-image: url(img/social-facebook.png);
+}
+.social-youtube {
+    background-image: url(img/social-youtube.png);
 }
 .social-instagram {
     background-image: url(img/social-instagram.png);
