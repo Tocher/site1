@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <title>PlanX</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
@@ -92,7 +92,40 @@
                                     <a class="social social-normal social-instagram" href=""></a>
                                 </div>
                                 <div class="col-6 col-md-12 slide-share">
-                                    <a href="" class="share">
+                                    <a href="#" class="share" data-url="img/slide1-right.png" data-title="Заголовок страницы" data-image="img/slide1-right.png">
+                                        <div class="social social-mini social-vk"></div>
+                                        <div class="share-text text-uppercase lato-light">поделиться</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 text-center">
+                            <img src="img/slide1.jpg" class="share-image img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 slide-bottom">
+                            <div class="col-md-8 float-left">
+                                <img src="img/slide1-right.png" class="img-fluid">
+                                <div class="lato-light slide-right">
+                                    Один из сюрпризов мероприятия из братской Украины - DJ AMIGA выступит 25 января со своим сетом в КРЦ "Европа".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-4 slide-top">
+                            <div class="row float-right">
+                                <div class="col-12 text-uppercase lato-light slide-left">
+                                    25 января PLAN X собирает<br>всех студентов в клубе<br>"ЕВРОПА" на Большой День
+                                </div>
+                                <div class="col-6 col-md-12 slide-social">
+                                    <a class="social social-normal social-vk" href=""></a>
+                                    <a class="social social-normal social-youtube" href=""></a>
+                                    <a class="social social-normal social-instagram" href=""></a>
+                                </div>
+                                <div class="col-6 col-md-12 slide-share">
+                                    <a href="#" class="share" data-url="http://monotone.by" data-title="Заголовок страницы" data-image="http://mysite.com/mypic.jpg">
                                         <div class="social social-mini social-vk"></div>
                                         <div class="share-text text-uppercase lato-light">поделиться</div>
                                     </a>
@@ -125,40 +158,7 @@
                                     <a class="social social-normal social-instagram" href=""></a>
                                 </div>
                                 <div class="col-6 col-md-12 slide-share">
-                                    <a href="" class="share">
-                                        <div class="social social-mini social-vk"></div>
-                                        <div class="share-text text-uppercase lato-light">поделиться</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 text-center">
-                            <img src="img/slide1.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-12 col-md-4 slide-bottom">
-                            <div class="col-md-8 float-left">
-                                <img src="img/slide1-right.png" class="img-fluid">
-                                <div class="lato-light slide-right">
-                                    Один из сюрпризов мероприятия из братской Украины - DJ AMIGA выступит 25 января со своим сетом в КРЦ "Европа".
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-12 col-md-4 slide-top">
-                            <div class="row float-right">
-                                <div class="col-12 text-uppercase lato-light slide-left">
-                                    25 января PLAN X собирает<br>всех студентов в клубе<br>"ЕВРОПА" на Большой День
-                                </div>
-                                <div class="col-6 col-md-12 slide-social">
-                                    <a class="social social-normal social-vk" href=""></a>
-                                    <a class="social social-normal social-youtube" href=""></a>
-                                    <a class="social social-normal social-instagram" href=""></a>
-                                </div>
-                                <div class="col-6 col-md-12 slide-share">
-                                    <a href="" class="share">
+                                    <a href="#" class="share" data-url="http://monotone.by" data-title="Заголовок страницы" data-image="http://mysite.com/mypic.jpg">
                                         <div class="social social-mini social-vk"></div>
                                         <div class="share-text text-uppercase lato-light">поделиться</div>
                                     </a>
@@ -302,12 +302,14 @@
         </div>
     </div>
 </section>
+<div class="share-tmp"></div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="jquery.min.js"></script>
 <script src="tether.min.js"></script>
 <script src="ekko-lightbox.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
 <script src="index.js"></script>
 </body>
 </html>

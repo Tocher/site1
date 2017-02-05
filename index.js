@@ -1,3 +1,5 @@
+var shareTmp = $('.share-tmp');
+
 $(document).on('ready', function() {
     //$('.carousel').carousel();
 });
@@ -12,4 +14,21 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     $(document).on('click', '.modal', function(event) {
         if (event.target === exit) $('.modal').modal('hide');
     });
+});
+
+$('.share').click(function(e) {
+    e.preventDefault();
+
+    if (!VK) return;
+
+    var data = $(this).data();
+
+    data.type = 'link';
+    data.noparse = true;
+
+    shareTmp.html(VK.Share.button(data));
+
+    try {
+        shareTmp.find('a')[2].click();
+    } catch (e) {}
 });
