@@ -26,6 +26,8 @@ $('.share').click(function(e) {
     data.url = location.host + '/' + data.url;
     data.noparse = true;
 
+    console.log(data);
+
     shareTmp.html(VK.Share.button(data));
 
     try {
