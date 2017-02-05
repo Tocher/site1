@@ -32,6 +32,6 @@ $('.share').click(function(e) {
     shareTmp.html(VK.Share.button(data, {text:'testtest'}));
 
     try {
-        shareTmp.find('a')[2].click();
+        shareTmp.find('a')[0].click();
     } catch (e) {}
 });
