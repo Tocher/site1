@@ -23,7 +23,7 @@ $('.share').click(function(e) {
 
     var data = $(this).data();
 
-    data.url = location.host + '/' + data.url;
+    data.url = location.href + data.url;
     data.noparse = true;
 
     console.log(data);
