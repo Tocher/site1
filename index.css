@@ -22,9 +22,13 @@ body {
         margin: 20px 0;
     }
     .slide-top {
+        display: none;
+    }
+    .slide-top-mobile {
+        margin-top: 20px;
         text-align: center;
     }
-    .slide-top > .row {
+    .slide-top-mobile > .row {
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -32,14 +36,41 @@ body {
     .info {
         padding-top: 20px;
     }
-    .slide-bottom {
-        margin-top: 20px;
-    }
-    .slide-right {
-        margin-top: 20px;
+    .slide-bottom img {
+        display: none;
     }
     .info_fixed {
         display: none !important;
+    }
+
+    .title {
+        margin: 40px 0 30px;
+    }
+
+    .section3 .carousel-control-next,
+    .section3 .carousel-control-prev {
+        height: 70px;
+        top: 40%;
+        background: #000;
+    }
+    .section3 .carousel-control-next {
+        right: -15px;
+        border-top-left-radius: 100%;
+        border-bottom-left-radius: 100%;
+    }
+    .section3 .carousel-control-prev {
+        left: -15px;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 100%;
+    }
+    .footer {
+        font-size: 1.2em;
+    }
+    .section5 {
+        padding-top: 70px;
+    }
+    .hide-mobile {
+        display: none;
     }
 }
 /* Small devices (tablets, 768px and up) */
@@ -59,6 +90,19 @@ body {
     }
     .share-text {
         font-size: .9em;
+    }
+    .slide-top-mobile {
+        display: none;
+    }
+
+    .title {
+        margin: 30px 0 60px;
+    }
+    .portfolio {
+        padding: 0 30px;
+    }
+    .section5 {
+        padding-top: 100px;
     }
 }
 @media (min-width: 768px) {
@@ -96,7 +140,7 @@ a, a:hover, a:visited, a:focus {
 .section1 {
     min-height: 100vh;
     position: relative;
-    z-index: 2;
+    z-index: 9001;
     overflow: hidden;
 }
 .section1:after {
@@ -132,6 +176,8 @@ a, a:hover, a:visited, a:focus {
 .info {
     background: #000;
     line-height: 70px;
+    z-index: 9001;
+    position: relative;
 }
 .info_fixed {
     z-index: 99;
@@ -199,6 +245,7 @@ a, a:hover, a:visited, a:focus {
 .section3 .carousel-control-prev {
     transition: all .3s;
 }
+
 .section3 .carousel-control-prev-icon {
     background: url(img/arrow.png) no-repeat;
     width: 30px;
@@ -239,7 +286,6 @@ a, a:hover, a:visited, a:focus {
     border-bottom: 1px solid #ccc;
     padding: 5px 20px;
     font-size: 1.5em;
-    margin: 30px 0 60px;
 }
 
 .section4 {
@@ -248,8 +294,7 @@ a, a:hover, a:visited, a:focus {
     z-index: 2;
 }
 .portfolio .row > div {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 10px;
 }
 .portfolio a.video:before {
     content: '';
@@ -282,10 +327,10 @@ a, a:hover, a:visited, a:focus {
     line-height: 1em;
     left: 0;
     bottom: 0;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top: 20px;
     background: rgba(0,0,0,.5);
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0) 100%);
 }
 .portfolio-more {
     margin-top: 40px;
@@ -377,7 +422,7 @@ a.monotone {
     margin: 0 2px;
     transition: all .3s ease;
     width: 20px;
-    height: 25px;
+    height: 23px;
 }
 .social:hover {
     opacity: .6;
@@ -396,7 +441,6 @@ a.monotone {
     background-image: url(img/social-instagram.png);
 }
 .section5 {
-    padding-top: 100px;
     position: relative;
     z-index: 2;
     background: #000;
@@ -405,6 +449,7 @@ a.monotone {
 
 .modal {
     background: rgba(0,0,0,.8);
+    z-index: 12000;
 }
 .modal.show .modal-dialog {
     height: 100%;
